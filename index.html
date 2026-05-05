@@ -250,7 +250,12 @@
     <h2>Campaign <span class="accent">Results</span></h2>
     <div class="campaigns-grid">
 
-      <div class="campaign-card">
+      <!-- ★ 截图命名：images/campaigns/laws-1.jpg, laws-2.jpg ... -->
+      <div class="campaign-card" data-shots="images/campaigns/laws-1.jpg,images/campaigns/laws-2.jpg,images/campaigns/laws-3.jpg">
+        <div class="campaign-thumb" data-shots="images/campaigns/laws-1.jpg,images/campaigns/laws-2.jpg,images/campaigns/laws-3.jpg">
+          <img src="images/campaigns/laws-1.jpg" alt="UC Laws 101 campaign screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
+          <div class="thumb-overlay"><span>View Screenshots</span></div>
+        </div>
         <div class="campaign-tag">Meta Ads · Lead Gen</div>
         <h3>UC Laws 101 Test Workshop</h3>
         <p class="campaign-meta">29 Apr – 5 May 2026 · NZD 150 budget</p>
@@ -265,9 +270,15 @@
             <span class="metric-label">CPL (NZD)</span>
           </div>
         </div>
+        <button class="btn-screenshots" data-shots="images/campaigns/laws-1.jpg,images/campaigns/laws-2.jpg,images/campaigns/laws-3.jpg">📸 View Screenshots</button>
       </div>
 
-      <div class="campaign-card">
+      <!-- ★ 截图命名：images/campaigns/homework-1.jpg, homework-2.jpg ... -->
+      <div class="campaign-card" data-shots="images/campaigns/homework-1.jpg,images/campaigns/homework-2.jpg,images/campaigns/homework-3.jpg">
+        <div class="campaign-thumb" data-shots="images/campaigns/homework-1.jpg,images/campaigns/homework-2.jpg,images/campaigns/homework-3.jpg">
+          <img src="images/campaigns/homework-1.jpg" alt="Homework Hub campaign screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
+          <div class="thumb-overlay"><span>View Screenshots</span></div>
+        </div>
         <div class="campaign-tag">Meta Ads · Engagement</div>
         <h3>Homework Hub</h3>
         <p class="campaign-meta">19 Apr – 31 May 2025 · NZD 87.93 budget</p>
@@ -290,9 +301,15 @@
             <span class="metric-label">CPE (NZD)</span>
           </div>
         </div>
+        <button class="btn-screenshots" data-shots="images/campaigns/homework-1.jpg,images/campaigns/homework-2.jpg,images/campaigns/homework-3.jpg">📸 View Screenshots</button>
       </div>
 
-      <div class="campaign-card featured-campaign">
+      <!-- ★ 截图命名：images/campaigns/sheffield-1.jpg, sheffield-2.jpg ... -->
+      <div class="campaign-card featured-campaign" data-shots="images/campaigns/sheffield-1.jpg,images/campaigns/sheffield-2.jpg,images/campaigns/sheffield-3.jpg">
+        <div class="campaign-thumb" data-shots="images/campaigns/sheffield-1.jpg,images/campaigns/sheffield-2.jpg,images/campaigns/sheffield-3.jpg">
+          <img src="images/campaigns/sheffield-1.jpg" alt="Sheffield campaign screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
+          <div class="thumb-overlay"><span>View Screenshots</span></div>
+        </div>
         <div class="campaign-tag">Weibo Ads · Lead Gen</div>
         <h3>Sheffield University IC Pre-Masters Promotion</h3>
         <p class="campaign-meta">1 Mar – 31 May 2023 · RMB 60,000 budget</p>
@@ -316,9 +333,15 @@
           </div>
         </div>
         <p class="campaign-note">CPL reduced from ¥310 → ¥248, achieving 20% cost efficiency improvement</p>
+        <button class="btn-screenshots" data-shots="images/campaigns/sheffield-1.jpg,images/campaigns/sheffield-2.jpg,images/campaigns/sheffield-3.jpg">📸 View Screenshots</button>
       </div>
 
-      <div class="campaign-card">
+      <!-- ★ 截图命名：images/campaigns/chengdu-1.jpg, chengdu-2.jpg ... -->
+      <div class="campaign-card" data-shots="images/campaigns/chengdu-1.jpg,images/campaigns/chengdu-2.jpg,images/campaigns/chengdu-3.jpg">
+        <div class="campaign-thumb" data-shots="images/campaigns/chengdu-1.jpg,images/campaigns/chengdu-2.jpg,images/campaigns/chengdu-3.jpg">
+          <img src="images/campaigns/chengdu-1.jpg" alt="Chengdu event screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
+          <div class="thumb-overlay"><span>View Screenshots</span></div>
+        </div>
         <div class="campaign-tag">Offline Event</div>
         <h3>Pre-Master's Program Promotion</h3>
         <p class="campaign-meta">16 Mar 2024 · Chengdu, China</p>
@@ -333,11 +356,23 @@
             <span class="metric-label">Conversions</span>
           </div>
         </div>
+        <button class="btn-screenshots" data-shots="images/campaigns/chengdu-1.jpg,images/campaigns/chengdu-2.jpg,images/campaigns/chengdu-3.jpg">📸 View Screenshots</button>
       </div>
 
     </div>
   </div>
 </section>
+
+<!-- LIGHTBOX MODAL -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <button class="lb-next" id="lbNext" aria-label="Next">›</button>
+  <div class="lb-img-wrap">
+    <img id="lbImg" src="" alt="Campaign screenshot" />
+  </div>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
 
 <!-- CREATIVE WORK -->
 <section id="creative">
