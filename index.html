@@ -18,8 +18,9 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#campaigns">Campaigns</a></li>
-      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#events">Events</a></li>
       <li><a href="#creative">Creative</a></li>
+      <li><a href="#photography">Photography</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
@@ -31,13 +32,22 @@
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-content">
-    <p class="hero-eyebrow">Digital Marketing · Data Analytics · Photography</p>
-    <h1 class="hero-name">Yongwei<br/><span class="accent">Hu</span></h1>
-    <p class="hero-tagline">10 years turning data into campaigns that convert — and moments into images that stay.</p>
-    <div class="hero-actions">
-      <a href="#campaigns" class="btn btn-primary">View My Work</a>
-      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Digital Marketing · Data Analytics · Photography</p>
+      <h1 class="hero-name">Yongwei<br/><span class="accent">Hu</span></h1>
+      <p class="hero-tagline">10 years turning data into campaigns that convert — and moments into images that stay.</p>
+      <div class="hero-actions">
+        <a href="#campaigns" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo-wrap">
+        <img src="images/profile.jpg" alt="Yongwei Hu" id="heroPhoto" onerror="this.closest('.hero-photo-wrap').classList.add('no-photo')" />
+        <div class="hero-photo-fallback"><span>VH</span></div>
+      </div>
+      <div class="hero-deco-dots"></div>
     </div>
   </div>
   <div class="hero-scroll">
@@ -50,31 +60,16 @@
 <section id="about">
   <div class="container">
     <div class="about-grid">
-      <div class="about-photo">
-        <div class="photo-frame">
-          <img src="images/profile.jpg" alt="Yongwei Hu" onerror="this.parentElement.classList.add('no-photo')" />
-          <div class="photo-placeholder"><span>VH</span></div>
-        </div>
-      </div>
       <div class="about-text">
         <p class="section-label">About Me</p>
         <h2>Hello, I'm <span class="accent">Vicky</span>.</h2>
         <p class="about-bio">Results-driven marketing professional with <strong>10 years of experience</strong> in digital marketing and advertising. I specialise in social media, paid campaigns, SEO/SEM, CRM automation, and data analytics.</p>
         <p class="about-bio">Recently completed a <strong>Master of Business Analytics (Marketing)</strong> at Massey University — combining strategic marketing instincts with hands-on data skills in SQL, Python, and Google Analytics.</p>
-        <p class="about-bio">I'm also an avid photographer and early adopter of AI tools (using ChatGPT since January 2023). I believe great marketing lives at the intersection of creativity and data.</p>
+        <p class="about-bio">Early adopter of AI tools (using ChatGPT since January 2023). I believe great marketing lives at the intersection of creativity and data.</p>
         <div class="about-meta">
-          <div class="meta-item">
-            <span class="meta-icon">📍</span>
-            <span>Auckland, New Zealand</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-icon">✅</span>
-            <span>Full NZ Working Rights</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-icon">🌐</span>
-            <span>English (Fluent) · Mandarin (Native)</span>
-          </div>
+          <div class="meta-item"><span class="meta-icon">📍</span><span>Auckland, New Zealand</span></div>
+          <div class="meta-item"><span class="meta-icon">✅</span><span>Full NZ Working Rights · Available immediately</span></div>
+          <div class="meta-item"><span class="meta-icon">🌐</span><span>English (Fluent) · Mandarin (Native)</span></div>
         </div>
       </div>
     </div>
@@ -96,7 +91,7 @@
         <div class="skill-card">
           <div class="skill-icon">🔍</div>
           <h4>SEO / Content</h4>
-          <p>SEO/SEM · Copywriting · Email Marketing · WeChat · RedNote</p>
+          <p>SEO/SEM · Copywriting · Email Marketing · Social Media Management</p>
         </div>
         <div class="skill-card">
           <div class="skill-icon">🛠</div>
@@ -111,7 +106,7 @@
         <div class="skill-card">
           <div class="skill-icon">🤖</div>
           <h4>AI Tools</h4>
-          <p>ChatGPT · Notebook LM · Sora · Google Antigravity</p>
+          <p>ChatGPT · Claude · Notebook LM · Sora · Google Antigravity</p>
         </div>
       </div>
     </div>
@@ -129,15 +124,11 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">Sep 2025 – Present</div>
         <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Marketing Manager <span class="part-time">Part-time</span></h3>
-              <p class="company">Elan Education · Auckland, NZ</p>
-            </div>
-          </div>
+          <h3>Marketing Manager <span class="part-time">Part-time</span></h3>
+          <p class="company">Elan Education · Auckland, NZ</p>
           <ul>
             <li>Manage digital campaigns across paid media channels</li>
-            <li>Analyse campaign data and optimise ads performance</li>
+            <li>Analyse campaign data and optimise ad performance</li>
             <li>Create copy and visual content for social media, posters, and marketing materials</li>
             <li>Build and maintain high-converting landing pages for lead generation</li>
             <li>Maintain customer relationship data through HubSpot CRM</li>
@@ -149,12 +140,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">Apr 2025 – Present</div>
         <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Marketing Manager <span class="volunteer">Volunteer</span></h3>
-              <p class="company">Dream Catchers WorldWide · Auckland, NZ</p>
-            </div>
-          </div>
+          <h3>Marketing Manager <span class="volunteer">Volunteer</span></h3>
+          <p class="company">Dream Catchers WorldWide · Auckland, NZ</p>
           <ul>
             <li>Plan and execute paid campaigns on Meta Ads with continuous optimisation</li>
             <li>Weekly social media content planning across Facebook, Instagram, LinkedIn, and WhatsApp</li>
@@ -166,12 +153,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">Mar 2021 – Jan 2025</div>
         <div class="timeline-card featured">
-          <div class="timeline-header">
-            <div>
-              <h3>Senior Digital Marketing Specialist</h3>
-              <p class="company">Study Group UK Limited (Shanghai Branch) · Shanghai, China</p>
-            </div>
-          </div>
+          <h3>Senior Digital Marketing Specialist</h3>
+          <p class="company">Study Group UK Limited (Shanghai Branch) · Shanghai, China</p>
           <ul>
             <li>Developed and executed annual digital marketing strategies and monthly paid media campaigns across multiple platforms</li>
             <li>Managed social and paid media campaigns — copywriting, creative design, and landing page optimisation</li>
@@ -188,12 +171,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">Apr 2019 – Aug 2020</div>
         <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Associate Marketing Director</h3>
-              <p class="company">Lunion Intelligence Technology Co., Ltd. · Shanghai, China</p>
-            </div>
-          </div>
+          <h3>Associate Marketing Director</h3>
+          <p class="company">Lunion Intelligence Technology Co., Ltd. · Shanghai, China</p>
           <ul>
             <li>Built marketing strategy and monthly marketing calendars</li>
             <li>Managed WeChat and Zhihu social media for brand engagement</li>
@@ -208,12 +187,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">May 2018 – Apr 2019</div>
         <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Media Manager</h3>
-              <p class="company">Junshu Media Co., Ltd. · Shanghai, China</p>
-            </div>
-          </div>
+          <h3>Media Manager</h3>
+          <p class="company">Junshu Media Co., Ltd. · Shanghai, China</p>
           <ul>
             <li>Built partnerships with media vendors and designed media strategies to meet KPI goals</li>
             <li>Coordinated with internal teams and external stakeholders for campaign delivery</li>
@@ -225,16 +200,12 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">Mar 2016 – Apr 2018</div>
         <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3>Account Executive</h3>
-              <p class="company">Omnicom Group · Shanghai, China</p>
-            </div>
-          </div>
+          <h3>Account Executive</h3>
+          <p class="company">Omnicom Group · Shanghai, China</p>
           <ul>
             <li>Executed and optimised digital advertising campaigns across multiple platforms</li>
             <li>Programmatic buying using DSP platforms, managing daily campaign performance</li>
-            <li>Analysed first- and third-party data to implement data-driven optimisations</li>
+            <li>Analysed first- and third-party data for data-driven optimisations</li>
             <li>Prepared campaign reports for clients including <strong>Google, Unilever, and Hilton</strong></li>
           </ul>
         </div>
@@ -251,10 +222,9 @@
     <h2>Campaign <span class="accent">Results</span></h2>
     <div class="campaigns-grid">
 
-      <!-- ★ 截图命名：images/campaigns/laws-1.jpg, laws-2.jpg ... -->
       <div class="campaign-card" data-shots="images/campaigns/laws-1.jpg,images/campaigns/laws-2.jpg,images/campaigns/laws-3.jpg">
         <div class="campaign-thumb" data-shots="images/campaigns/laws-1.jpg,images/campaigns/laws-2.jpg,images/campaigns/laws-3.jpg">
-          <img src="images/campaigns/laws-1.jpg" alt="UC Laws 101 campaign screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
+          <img src="images/campaigns/laws-1.jpg" alt="UC Laws 101 campaign" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
           <div class="thumb-overlay"><span>View Screenshots</span></div>
         </div>
         <div class="campaign-tag">Meta Ads · Lead Gen</div>
@@ -262,53 +232,33 @@
         <p class="campaign-meta">29 Apr – 5 May 2026 · NZD 150 budget</p>
         <p>Targeted University of Canterbury students (10km radius, age 18–21) using multiple ad creatives to generate qualified sign-ups for a test workshop.</p>
         <div class="campaign-metrics">
-          <div class="metric">
-            <span class="metric-value">11</span>
-            <span class="metric-label">Sign-ups</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">$13.57</span>
-            <span class="metric-label">CPL (NZD)</span>
-          </div>
+          <div class="metric"><span class="metric-value">11</span><span class="metric-label">Sign-ups</span></div>
+          <div class="metric"><span class="metric-value">$13.57</span><span class="metric-label">CPL (NZD)</span></div>
         </div>
         <button class="btn-screenshots" data-shots="images/campaigns/laws-1.jpg,images/campaigns/laws-2.jpg,images/campaigns/laws-3.jpg">📸 View Screenshots</button>
       </div>
 
-      <!-- ★ 截图命名：images/campaigns/homework-1.jpg, homework-2.jpg ... -->
       <div class="campaign-card" data-shots="images/campaigns/homework-1.jpg,images/campaigns/homework-2.jpg,images/campaigns/homework-3.jpg">
         <div class="campaign-thumb" data-shots="images/campaigns/homework-1.jpg,images/campaigns/homework-2.jpg,images/campaigns/homework-3.jpg">
-          <img src="images/campaigns/homework-1.jpg" alt="Homework Hub campaign screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
+          <img src="images/campaigns/homework-1.jpg" alt="Homework Hub campaign" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
           <div class="thumb-overlay"><span>View Screenshots</span></div>
         </div>
         <div class="campaign-tag">Meta Ads · Engagement</div>
         <h3>Homework Hub</h3>
         <p class="campaign-meta">19 Apr – 31 May 2025 · NZD 87.93 budget</p>
-        <p>Optimised mid-campaign by shifting focus to Instagram (higher engagement) and top-performing Facebook placements. Narrowed geo-targeting to locations near the business.</p>
+        <p>Optimised mid-campaign by shifting focus to Instagram and top-performing Facebook placements. Narrowed geo-targeting to locations near the business.</p>
         <div class="campaign-metrics">
-          <div class="metric">
-            <span class="metric-value">4,631</span>
-            <span class="metric-label">Impressions</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">3,112</span>
-            <span class="metric-label">Reach</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">254</span>
-            <span class="metric-label">Engagements</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">$0.33</span>
-            <span class="metric-label">CPE (NZD)</span>
-          </div>
+          <div class="metric"><span class="metric-value">4,631</span><span class="metric-label">Impressions</span></div>
+          <div class="metric"><span class="metric-value">3,112</span><span class="metric-label">Reach</span></div>
+          <div class="metric"><span class="metric-value">254</span><span class="metric-label">Engagements</span></div>
+          <div class="metric"><span class="metric-value">$0.33</span><span class="metric-label">CPE (NZD)</span></div>
         </div>
         <button class="btn-screenshots" data-shots="images/campaigns/homework-1.jpg,images/campaigns/homework-2.jpg,images/campaigns/homework-3.jpg">📸 View Screenshots</button>
       </div>
 
-      <!-- ★ 截图命名：images/campaigns/sheffield-1.jpg, sheffield-2.jpg ... -->
       <div class="campaign-card featured-campaign" data-shots="images/campaigns/sheffield-1.jpg,images/campaigns/sheffield-2.jpg,images/campaigns/sheffield-3.jpg">
         <div class="campaign-thumb" data-shots="images/campaigns/sheffield-1.jpg,images/campaigns/sheffield-2.jpg,images/campaigns/sheffield-3.jpg">
-          <img src="images/campaigns/sheffield-1.jpg" alt="Sheffield campaign screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
+          <img src="images/campaigns/sheffield-1.jpg" alt="Sheffield campaign" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
           <div class="thumb-overlay"><span>View Screenshots</span></div>
         </div>
         <div class="campaign-tag">Weibo Ads · Lead Gen</div>
@@ -316,193 +266,183 @@
         <p class="campaign-meta">1 Mar – 31 May 2023 · RMB 60,000 budget</p>
         <p>Targeted Chinese postgraduate entrance exam (Kaoyan) students using location-based services to precisely reach university campuses in top-performing cities. Refined keyword targeting with subject-related terms, competitor names, and related phrases.</p>
         <div class="campaign-metrics">
-          <div class="metric">
-            <span class="metric-value">12.85M</span>
-            <span class="metric-label">Impressions</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">¥4.67</span>
-            <span class="metric-label">CPM</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">242</span>
-            <span class="metric-label">Leads</span>
-          </div>
-          <div class="metric highlight-metric">
-            <span class="metric-value">-20%</span>
-            <span class="metric-label">Cost Efficiency</span>
-          </div>
+          <div class="metric"><span class="metric-value">12.85M</span><span class="metric-label">Impressions</span></div>
+          <div class="metric"><span class="metric-value">¥4.67</span><span class="metric-label">CPM</span></div>
+          <div class="metric"><span class="metric-value">242</span><span class="metric-label">Leads</span></div>
+          <div class="metric highlight-metric"><span class="metric-value">-20%</span><span class="metric-label">Cost Efficiency</span></div>
         </div>
         <p class="campaign-note">CPL reduced from ¥310 → ¥248, achieving 20% cost efficiency improvement</p>
         <button class="btn-screenshots" data-shots="images/campaigns/sheffield-1.jpg,images/campaigns/sheffield-2.jpg,images/campaigns/sheffield-3.jpg">📸 View Screenshots</button>
       </div>
 
-      <!-- ★ 截图命名：images/campaigns/chengdu-1.jpg, chengdu-2.jpg ... -->
-      <div class="campaign-card" data-shots="images/campaigns/chengdu-1.jpg,images/campaigns/chengdu-2.jpg,images/campaigns/chengdu-3.jpg">
-        <div class="campaign-thumb" data-shots="images/campaigns/chengdu-1.jpg,images/campaigns/chengdu-2.jpg,images/campaigns/chengdu-3.jpg">
-          <img src="images/campaigns/chengdu-1.jpg" alt="Chengdu event screenshot" loading="lazy" onerror="this.closest('.campaign-thumb').style.display='none'" />
-          <div class="thumb-overlay"><span>View Screenshots</span></div>
-        </div>
-        <div class="campaign-tag">Offline Event</div>
-        <h3>Pre-Master's Program Promotion</h3>
-        <p class="campaign-meta">16 Mar 2024 · Chengdu, China</p>
-        <p>Organised a full offline event targeting engineering students from Chengdu universities. Handled venue booking, copywriting, marketing materials, social media promotion, speech scripts, and stakeholder coordination.</p>
-        <div class="campaign-metrics">
-          <div class="metric">
-            <span class="metric-value">20+</span>
-            <span class="metric-label">Attendees</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">2</span>
-            <span class="metric-label">Conversions</span>
-          </div>
-        </div>
-        <button class="btn-screenshots" data-shots="images/campaigns/chengdu-1.jpg,images/campaigns/chengdu-2.jpg,images/campaigns/chengdu-3.jpg">📸 View Screenshots</button>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- LIGHTBOX MODAL -->
-<div id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
   <button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button>
   <button class="lb-next" id="lbNext" aria-label="Next">›</button>
-  <div class="lb-img-wrap">
-    <img id="lbImg" src="" alt="Campaign screenshot" />
-  </div>
+  <div class="lb-img-wrap"><img id="lbImg" src="" alt="Screenshot" /></div>
   <div class="lb-counter" id="lbCounter"></div>
 </div>
 
-<!-- LEADERSHIP -->
-<section id="leadership">
+<!-- VIDEO MODAL -->
+<div id="videoModal" role="dialog" aria-modal="true" aria-label="Video player">
+  <button class="vm-close" id="vmClose" aria-label="Close">✕</button>
+  <div class="vm-inner" id="vmInner"></div>
+</div>
+
+<!-- EVENTS -->
+<section id="events">
   <div class="container">
-    <p class="section-label">Leadership &amp; Community</p>
-    <h2>Beyond the <span class="accent">Job</span></h2>
-    <div class="leadership-grid">
+    <p class="section-label">Leadership &amp; Events</p>
+    <h2>On the <span class="accent">Ground</span></h2>
 
-      <div class="leadership-card leadership-main">
-        <div class="leadership-badge">Founder &amp; President</div>
-        <div class="leadership-body">
-          <div class="leadership-title-row">
-            <div>
-              <h3>Massey University Photography Club</h3>
-              <p class="leadership-meta">2025 – Present · Auckland, New Zealand</p>
-            </div>
-            <div class="fujifilm-badge">× <span>FUJIFILM</span></div>
-          </div>
-          <p class="leadership-desc">Built the club from the ground up — from zero to an active student community. Responsible for the full lifecycle: founding the club, recruiting members, planning and running events, creating and managing all social media content, and driving member engagement.</p>
-          <div class="leadership-highlights">
-            <div class="lh-item">
-              <span class="lh-icon">🏗</span>
-              <span>Founded the club from scratch</span>
-            </div>
-            <div class="lh-item">
-              <span class="lh-icon">📸</span>
-              <span>Event planning, photography workshops &amp; member engagement</span>
-            </div>
-            <div class="lh-item">
-              <span class="lh-icon">📱</span>
-              <span>Built &amp; manage club social media (Instagram, LinkedIn)</span>
-            </div>
-            <div class="lh-item lh-highlight">
-              <span class="lh-icon">🤝</span>
-              <span>Established official industry partnership with <strong>Fujifilm New Zealand</strong></span>
-            </div>
-          </div>
+    <!-- Photography Club -->
+    <div class="event-card">
+      <div class="event-photos" id="photoclubPhotos">
+        <!-- Auto-loads from images/events/photoclub-1.jpg ... photoclub-5.jpg -->
+        <div class="event-photos-placeholder">Add photos:<br/>images/events/photoclub-1.jpg</div>
+      </div>
+      <div class="event-info">
+        <div class="event-badge">Founder &amp; President</div>
+        <h3>Massey University Photography Club <span class="fujifilm-badge">× FUJIFILM</span></h3>
+        <p class="event-meta">2025 – Present · Auckland, New Zealand</p>
+        <p class="event-desc">Built the club from the ground up — from zero to an active student community. Founded the club, recruited members, planned and ran events, and built all social media channels from scratch.</p>
+        <div class="event-highlights">
+          <div class="ev-item"><span>🏗</span><span>Founded the club from scratch</span></div>
+          <div class="ev-item"><span>📱</span><span>Built &amp; manage club Instagram and LinkedIn</span></div>
+          <div class="ev-item ev-highlight"><span>🤝</span><span>Established official partnership with <strong>Fujifilm New Zealand</strong></span></div>
+          <div class="ev-item"><span>🎞</span><span>Photography workshops, member events &amp; engagement</span></div>
         </div>
       </div>
-
-      <div class="leadership-card">
-        <div class="leadership-badge leadership-badge-green">Student Ambassador</div>
-        <div class="leadership-body">
-          <h3>Marketing Association New Zealand</h3>
-          <p class="leadership-meta">2025 – Present · Auckland, New Zealand</p>
-          <p class="leadership-desc">Representing Massey University as a student ambassador for the leading marketing industry body in New Zealand. Involved in industry events, networking, and capturing event photography.</p>
-          <div class="leadership-highlights">
-            <div class="lh-item">
-              <span class="lh-icon">🎙</span>
-              <span>Industry events &amp; networking representation</span>
-            </div>
-            <div class="lh-item">
-              <span class="lh-icon">📷</span>
-              <span>Event photography &amp; content creation</span>
-            </div>
-            <div class="lh-item">
-              <span class="lh-icon">🏫</span>
-              <span>University liaison for Marketing Association NZ</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Marketing Association -->
+    <div class="event-card event-card-alt">
+      <div class="event-info">
+        <div class="event-badge event-badge-green">Student Ambassador</div>
+        <h3>Marketing Association New Zealand</h3>
+        <p class="event-meta">2025 – Present · Auckland, New Zealand</p>
+        <p class="event-desc">Representing Massey University as a student ambassador for the leading marketing industry body in New Zealand — attending industry events, networking, and capturing event photography.</p>
+        <div class="event-highlights">
+          <div class="ev-item"><span>🎙</span><span>Industry events &amp; networking representation</span></div>
+          <div class="ev-item"><span>📷</span><span>Event photography &amp; content creation</span></div>
+          <div class="ev-item"><span>🏫</span><span>University liaison for Marketing Association NZ</span></div>
+        </div>
+      </div>
+      <div class="event-photos" id="manzPhotos">
+        <!-- Auto-loads from images/events/manz-1.jpg ... manz-3.jpg -->
+        <div class="event-photos-placeholder">Add photos:<br/>images/events/manz-1.jpg</div>
+      </div>
+    </div>
+
+    <!-- Pre-Masters Chengdu -->
+    <div class="event-card">
+      <div class="event-photos" id="premastersPhotos">
+        <!-- Auto-loads from images/events/premasters-1.jpg ... premasters-3.jpg -->
+        <div class="event-photos-placeholder">Add photos:<br/>images/events/premasters-1.jpg</div>
+      </div>
+      <div class="event-info">
+        <div class="event-badge event-badge-purple">Offline Event</div>
+        <h3>Pre-Master's Program Promotion</h3>
+        <p class="event-meta">16 Mar 2024 · Chengdu, China</p>
+        <p class="event-desc">Organised a full offline promotional event targeting engineering students from Chengdu universities. Handled venue booking, copywriting, marketing materials, social media promotion, speech scripts, and stakeholder coordination.</p>
+        <div class="event-highlights">
+          <div class="ev-item"><span>📋</span><span>End-to-end event planning and execution</span></div>
+          <div class="ev-item"><span>🎤</span><span>Speech scripts, PowerPoint slides, and MC coordination</span></div>
+          <div class="ev-item ev-highlight"><span>🎯</span><span><strong>20+ attendees · 2 converted to actual applicants</strong></span></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- CREATIVE WORK -->
+<!-- CREATIVE -->
 <section id="creative">
   <div class="container">
     <p class="section-label">Creative Output</p>
     <h2>Content &amp; <span class="accent">Visual</span> Work</h2>
-    <div class="creative-grid">
 
-      <div class="creative-card">
+    <!-- Social Media -->
+    <div class="creative-row">
+      <div class="creative-label-card">
         <div class="creative-icon">📱</div>
         <h4>Social Media Management</h4>
-        <p>Massey Photography Club Instagram &amp; LinkedIn — grew account, managed editorial calendar, built Fujifilm partnership.</p>
+        <p>Multi-platform management across Instagram, Facebook, LinkedIn, and WeChat — content planning, copywriting, poster design, and community engagement.</p>
         <div class="creative-tags">
-          <span>Instagram</span><span>LinkedIn</span><span>Facebook</span><span>WhatsApp</span>
+          <span>Instagram</span><span>LinkedIn</span><span>Facebook</span><span>WeChat</span><span>RedNote</span>
         </div>
       </div>
+    </div>
 
-      <div class="creative-card">
-        <div class="creative-icon">📝</div>
-        <h4>WeChat Official Account</h4>
-        <p>Independently wrote and published articles — topic planning, content writing, image editing, and layout design.</p>
-        <div class="creative-tags">
-          <span>Copywriting</span><span>Layout</span><span>Image Editing</span>
-        </div>
-      </div>
-
-      <div class="creative-card">
-        <div class="creative-icon">🌸</div>
-        <h4>RedNote (小红书)</h4>
-        <p>Independently operated RedNote account with copywriting and poster design.</p>
-        <div class="creative-tags">
-          <span>Copywriting</span><span>Poster Design</span>
-        </div>
-      </div>
-
-      <div class="creative-card">
+    <!-- Poster Carousel -->
+    <div class="creative-row">
+      <div class="creative-section-head">
         <div class="creative-icon">🖼</div>
-        <h4>Poster &amp; Visual Design</h4>
-        <p>Topic planning, content writing, and layout design for marketing materials and event promotions.</p>
-        <div class="creative-tags">
-          <span>Canva</span><span>Photoshop</span><span>Lightroom</span>
-        </div>
+        <h4>Poster Design</h4>
+        <p>Topic planning, content writing, and layout design for campaigns and events.</p>
       </div>
+      <div class="carousel-wrap">
+        <div class="carousel-track" id="posterTrack">
+          <!-- Auto-loads from images/posters/poster-1.jpg ... poster-10.jpg -->
+          <div class="carousel-placeholder">Add posters to<br/><code>images/posters/poster-1.jpg</code></div>
+        </div>
+        <button class="car-btn car-prev" id="posterPrev" aria-label="Previous">‹</button>
+        <button class="car-btn car-next" id="posterNext" aria-label="Next">›</button>
+      </div>
+    </div>
 
-      <div class="creative-card">
+    <!-- PowerPoint Carousel -->
+    <div class="creative-row">
+      <div class="creative-section-head">
+        <div class="creative-icon">📊</div>
+        <h4>PowerPoint &amp; Reports</h4>
+        <p>Professional proposal and presentation slides for campaigns, events, and client reporting.</p>
+      </div>
+      <div class="carousel-wrap">
+        <div class="carousel-track" id="pptTrack">
+          <!-- Auto-loads from images/ppt/ppt-1.jpg ... ppt-5.jpg -->
+          <div class="carousel-placeholder">Add slides to<br/><code>images/ppt/ppt-1.jpg</code></div>
+        </div>
+        <button class="car-btn car-prev" id="pptPrev" aria-label="Previous">‹</button>
+        <button class="car-btn car-next" id="pptNext" aria-label="Next">›</button>
+      </div>
+    </div>
+
+    <!-- Videos -->
+    <div class="creative-row">
+      <div class="creative-section-head">
         <div class="creative-icon">🎞</div>
         <h4>Video Production</h4>
-        <p>Created and edited promotional and social media videos for campaigns and events.</p>
-        <div class="creative-tags">
-          <span>Final Cut Pro</span><span>CapCut</span>
+        <p>Promotional and social media videos for campaigns and events. Click to watch.</p>
+      </div>
+      <div class="video-grid" id="videoGrid">
+        <!--
+          To add a video:
+          Option A (YouTube):
+            <div class="video-card" data-src="https://www.youtube.com/embed/VIDEO_ID" data-type="youtube">
+              <img src="images/videos/thumb-1.jpg" onerror="this.src=''" alt="Video" />
+              <div class="video-play">▶</div>
+              <p>Video title</p>
+            </div>
+
+          Option B (local file in /videos/ folder):
+            <div class="video-card" data-src="videos/video-1.mp4" data-type="local">
+              <img src="images/videos/thumb-1.jpg" onerror="this.src=''" alt="Video" />
+              <div class="video-play">▶</div>
+              <p>Video title</p>
+            </div>
+        -->
+        <div class="video-placeholder">
+          <p>Add your videos in <code>index.html</code> under the Video section.<br/>Use YouTube links or upload .mp4 to the <code>videos/</code> folder.</p>
         </div>
       </div>
-
-      <div class="creative-card">
-        <div class="creative-icon">📐</div>
-        <h4>UX Prototyping</h4>
-        <p>Created Axure prototypes for presentation proposals and project planning.</p>
-        <div class="creative-tags">
-          <span>Axure</span><span>UX Design</span>
-        </div>
-      </div>
-
     </div>
+
   </div>
 </section>
 
@@ -512,12 +452,17 @@
     <p class="section-label">Photography</p>
     <h2>Behind the <span class="accent">Lens</span></h2>
     <p class="section-intro">I founded the Massey University Photography Club and serve as its President — leading events, building our community, and establishing an official partnership with Fujifilm New Zealand. Photography shapes how I see visual marketing: every campaign is a frame, and every frame tells a story.</p>
-    <div class="photo-gallery" id="photoGallery">
-      <!-- Photos go here — add your own images to the /images folder and they'll appear automatically -->
-      <div class="gallery-placeholder">
-        <p>Add your photography to the <code>images/gallery/</code> folder.<br/>Name them <code>photo-1.jpg</code>, <code>photo-2.jpg</code>, etc.</p>
+  </div>
+  <!-- Full-width slider (outside container for edge-to-edge) -->
+  <div class="photo-slider-wrap">
+    <div class="photo-slider" id="photoSlider">
+      <!-- Auto-loads photo-1.jpg ... photo-20.jpg from images/gallery/ -->
+      <div class="slider-placeholder">
+        <p>Add your photos to <code>images/gallery/</code><br/>Named <code>photo-1.jpg</code>, <code>photo-2.jpg</code>…</p>
       </div>
     </div>
+    <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous">‹</button>
+    <button class="slider-btn slider-next" id="sliderNext" aria-label="Next">›</button>
   </div>
 </section>
 
@@ -546,24 +491,31 @@
       </div>
     </div>
 
+    <p class="section-label" style="margin-top:48px">Certifications</p>
     <div class="certs-grid">
-      <div class="cert-badge">
+      <!-- To add cert photo: add data-cert="images/certs/cert-1.jpg" to the badge -->
+      <div class="cert-badge" data-cert="images/certs/cert-1.jpg">
         <span class="cert-icon">🏅</span>
         <span>Business Analytics — Udacity Nanodegree</span>
       </div>
-      <div class="cert-badge">
+      <div class="cert-badge" data-cert="images/certs/cert-2.jpg">
+        <span class="cert-icon">🏅</span>
+        <span>SAS Academic Specialisation — Business Analytics (Marketing)</span>
+      </div>
+      <div class="cert-badge" data-cert="images/certs/cert-3.jpg">
         <span class="cert-icon">🏅</span>
         <span>Google Ads — Fundamentals</span>
       </div>
-      <div class="cert-badge">
+      <div class="cert-badge" data-cert="images/certs/cert-4.jpg">
         <span class="cert-icon">🏅</span>
         <span>Google Ads — Display</span>
       </div>
-      <div class="cert-badge">
+      <div class="cert-badge" data-cert="images/certs/cert-5.jpg">
         <span class="cert-icon">🏅</span>
         <span>Google Ads — Programmable Marketing</span>
       </div>
     </div>
+    <p class="cert-hint">Click any certificate to view</p>
   </div>
 </section>
 
@@ -576,12 +528,10 @@
       <p class="contact-intro">Open to new opportunities, collaborations, or just a conversation about marketing, data, or photography.</p>
       <div class="contact-links">
         <a href="mailto:vicky.hyw@gmail.com" class="contact-link">
-          <span class="contact-icon">✉️</span>
-          <span>vicky.hyw@gmail.com</span>
+          <span class="contact-icon">✉️</span><span>vicky.hyw@gmail.com</span>
         </a>
         <a href="tel:+64021950328" class="contact-link">
-          <span class="contact-icon">📞</span>
-          <span>+64 021 950 328</span>
+          <span class="contact-icon">📞</span><span>+64 021 950 328</span>
         </a>
       </div>
       <a href="mailto:vicky.hyw@gmail.com" class="btn btn-primary btn-large">Say Hello</a>
@@ -589,7 +539,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 Yongwei (Vicky) Hu · Auckland, New Zealand</p>
   <p class="footer-note">Digital Marketing · Data Analytics · Photography</p>
