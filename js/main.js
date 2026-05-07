@@ -215,7 +215,7 @@ function loadCarousel(trackId, folder, prefix, count, prevId, nextId) {
   if (next && track) next.addEventListener('click', () => track.scrollBy({ left: 300, behavior: 'smooth' }));
 }
 
-loadCarousel('posterTrack', 'images/posters/poster-', 'Poster', 10, 'posterPrev', 'posterNext');
+loadCarousel('posterTrack', 'images/posters/poster-', 'Poster', 20, 'posterPrev', 'posterNext');
 
 // ── AUTO-LOAD: Local videos ──
 // Edit these titles to match your videos (in order)
