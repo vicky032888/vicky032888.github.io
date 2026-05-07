@@ -204,7 +204,48 @@ function loadCarousel(trackId, folder, prefix, count, prevId, nextId) {
 }
 
 loadCarousel('posterTrack', 'images/posters/poster-', 'Poster', 10, 'posterPrev', 'posterNext');
-loadCarousel('pptTrack',    'images/ppt/ppt-',        'Slide',  5,  'pptPrev',    'pptNext');
+
+// ── AUTO-LOAD: Local videos ──
+// Edit these titles to match your videos (in order)
+const VIDEO_TITLES = [
+  'Video 1',  // videos/video-1.mp4
+  'Video 2',  // videos/video-2.mp4
+  'Video 3',  // videos/video-3.mp4
+  'Video 4',  // videos/video-4.mp4
+  'Video 5',  // videos/video-5.mp4
+];
+
+function loadVideos() {
+  const grid = document.getElementById('videoGrid');
+  if (!grid) return;
+
+  VIDEO_TITLES.forEach((title, idx) => {
+    const n   = idx + 1;
+    const src = `videos/video-${n}.mp4`;
+
+    const probe = document.createElement('video');
+    probe.preload = 'metadata';
+
+    probe.onloadedmetadata = () => {
+      const ph = document.getElementById('videoPlaceholder');
+      if (ph) ph.remove();
+
+      const thumb = `images/videos/thumb-${n}.jpg`;
+      const card  = document.createElement('div');
+      card.className = 'video-card';
+      card.innerHTML = `
+        <img src="${thumb}" alt="${title}" onerror="this.style.display='none'" />
+        <div class="video-play">▶</div>
+        <p>${title}</p>`;
+      card.addEventListener('click', () => openVideoModal(src, 'local'));
+      grid.appendChild(card);
+    };
+
+    probe.onerror = () => {};
+    probe.src = src;
+  });
+}
+loadVideos();
 
 // ── AUTO-LOAD: Event photos ──
 function loadEventPhotos(containerId, folder, prefix, count) {
