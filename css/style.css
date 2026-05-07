@@ -261,8 +261,8 @@ ul { list-style: none; }
 .carousel-track::-webkit-scrollbar { display: none; }
 .carousel-track img {
   flex-shrink: 0;
-  width: 280px;
-  height: 200px;
+  width: 200px;
+  height: 280px;
   object-fit: cover;
   border-radius: 10px;
   scroll-snap-align: start;
