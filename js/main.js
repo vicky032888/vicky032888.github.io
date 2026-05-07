@@ -49,10 +49,22 @@ const lbNext    = document.getElementById('lbNext');
 let lbImages = [], lbIndex = 0;
 
 function openLightbox(shots, startIndex = 0) {
-  lbImages = shots.filter(s => s && s.trim());
-  lbIndex  = startIndex;
-  showLbSlide();
-  if (lightbox) { lightbox.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  const urls = shots.filter(s => s && s.trim());
+  // Pre-check which images actually exist before opening
+  Promise.all(
+    urls.map(url => new Promise(resolve => {
+      const img = new Image();
+      img.onload  = () => resolve(url);
+      img.onerror = () => resolve(null);
+      img.src = url;
+    }))
+  ).then(results => {
+    lbImages = results.filter(Boolean);
+    if (lbImages.length === 0) return;
+    lbIndex = Math.min(startIndex, lbImages.length - 1);
+    showLbSlide();
+    if (lightbox) { lightbox.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  });
 }
 function showLbSlide() {
   if (!lbImg) return;
