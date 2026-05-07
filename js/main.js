@@ -208,11 +208,9 @@ loadCarousel('posterTrack', 'images/posters/poster-', 'Poster', 10, 'posterPrev'
 // ── AUTO-LOAD: Local videos ──
 // Edit these titles to match your videos (in order)
 const VIDEO_TITLES = [
-  'Video 1',  // videos/video-1.mp4
-  'Video 2',  // videos/video-2.mp4
-  'Video 3',  // videos/video-3.mp4
-  'Video 4',  // videos/video-4.mp4
-  'Video 5',  // videos/video-5.mp4
+  'Onsocial26',  // videos/video-1.mp4
+  'Yoga Class',  // videos/video-2.mp4
+  'Photowalk',  // videos/video-3.mp4
 ];
 
 function loadVideos() {
