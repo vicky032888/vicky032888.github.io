@@ -132,7 +132,6 @@ if (photoSlider) {
 
   for (let i = 1; i <= total; i++) {
     const img = new Image();
-    img.loading = 'lazy';
     img.alt = `Photography by Yongwei Hu — ${i}`;
 
     img.onload = () => {
@@ -183,7 +182,6 @@ function loadCarousel(trackId, folder, prefix, count, prevId, nextId) {
 
   for (let i = 1; i <= count; i++) {
     const img = new Image();
-    img.loading = 'lazy';
     img.alt = `${prefix} ${i}`;
     img.onload = () => {
       loaded++;
@@ -216,7 +214,6 @@ function loadEventPhotos(containerId, folder, prefix, count) {
 
   for (let i = 1; i <= count; i++) {
     const img = new Image();
-    img.loading = 'lazy';
     img.alt = `${prefix} event photo ${i}`;
     img.onload = () => {
       loaded++;
