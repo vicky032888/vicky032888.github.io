@@ -221,8 +221,9 @@ loadCarousel('posterTrack', 'images/posters/poster-', 'Poster', 20, 'posterPrev'
 // Edit these titles to match your videos (in order)
 const VIDEO_TITLES = [
   'Onsocial26',  // videos/video-1.mp4
-  'Yoga Class',  // videos/video-2.mp4
+  'Fujifilm',  // videos/video-2.mp4
   'Photowalk',  // videos/video-3.mp4
+  'Yoga class',  // videos/video-3.mp4
 ];
 
 function loadVideos() {
